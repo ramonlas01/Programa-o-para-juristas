@@ -4,13 +4,11 @@ title: "Capítulo 1: Expressões Regulares"
 
 Nós começamos nossa exploração sobre programação com **expressões regulares**.[^1] Algumas vezes conhecida como "regex", as expressões regulares são uma forma de representar padrões de caracteres usando regras predefinidas. 
 
-Pense em expressões regulares como uma versão mais rápida e mais poderosa do recurso "Localizar e Substituir" dos processadores de texto. Quando você pesquisa por algo como "Juiz" em um processador de texto, ele irá mostrar apenas combinações exatas - no máximo, você pode encontrar "juiz" também se desabilitar a diferenciação entre maísculas e minúsculas. If you want to find all similar matches, like "judicial" and "judiciary", you'll have to manually search for every type.
+Pense em expressões regulares como uma versão mais rápida e mais poderosa do recurso "Localizar e Substituir" dos processadores de texto. Quando você pesquisa por algo como "Juiz" em um processador de texto, ele irá mostrar apenas combinações exatas - no máximo, você pode encontrar "juiz" também se desabilitar a diferenciação entre maísculas e minúsculas. Se você quer encontrar todas as combinações similares, como "judicial" e "judiciário", você terá que procurar manualmente por cada um deles. 
 
-If you want to find all similar matches, like "judicial" and "judiciary", you'll have to manually search for every type.
+Se você já tiver acessado um mecanismo de busca de decisões judiciais como o do Supremo Tribunal Federal ou o do Superior Tribunal de Justiça, você provavelmente deve ter utilizado um operador lógico curinga como o "$" para lidar com esse tipo de tarefa. Mas, expressões regulares são *ainda mais poderosas* porque você pode dizer ao seu computador para combinar muitos tipos diferentes de padrões que você esteja procurando, não apenas texto exato ou certos curingas predefinidos. Expressões regulares dá a você muito controle granular (mais possibilidades e níveis de controle) sobre seus padrões, e você pode até mesmo usar eles no [Microsoft Word](http://office.microsoft.com/en-us/word-help/find-and-replace-text-by-using-regular-expressions-advanced-HA102350661.aspx).
 
-If you've used a database like Lexis or West or Fastcase, you've probably used a wildcard pattern such as `*` to handle this sort of thing. But, regular expressions are *even more powerful* because you can tell your computer to match many different types of patterns you're searching for, not just exact text or certain predefined wildcards. Regular expressions give you much more granular control over your patterns, and you can even use them in [Microsoft Word](http://office.microsoft.com/en-us/word-help/find-and-replace-text-by-using-regular-expressions-advanced-HA102350661.aspx).
-
-### Regular Expressions
+### Expressões Regulares
 
 Regex may be intuitive for many lawyers, particularly those who were on law review.[^2] That's because citations and regular expressions are closely related. For example, lawyers know what `5 U.S.C. § 552 (2006)` is. We also know that `552 U.S. 5 (2007)` is a different thing entirely. The former is a statute enacted by Congress and codified in the United States Code. The latter is a reported decision of the Supreme Court of the United States published in the bound volumes of the United States Reports. But, let's examine them closely.
 
