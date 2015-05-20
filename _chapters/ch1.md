@@ -1,10 +1,12 @@
 ---
-title: "Chapter 1: Regular Expressions"
+title: "Capítulo 1: Expressões Regulares"
 ---
 
-We begin our exploration of coding with **regular expressions**.[^1] Sometimes referred to as "regex", regular expressions are a way of representing patterns of characters using predefined rules.
+Nós começamos nossa exploração sobre programação com **expressões regulares**.[^1] Algumas vezes conhecida como "regex", as expressões regulares são uma forma de representar padrões de caracteres usando regras predefinidas. 
 
-Think of regular expressions as a faster, more powerful version of "Find & Replace". When you search for something like "Judge" in a word processor, it'll show only exact matches - at most, you can find "judge" as well by disabling case sensitivity. If you want to find all similar matches, like "judicial" and "judiciary", you'll have to manually search for every type.
+Pense em expressões regulares como uma versão mais rápida e mais poderosa do recurso "Localizar e Substituir" dos processadores de texto. Quando você pesquisa por algo como "Juiz" em um processador de texto, ele irá mostrar apenas combinações exatas - no máximo, você pode encontrar "juiz" também se desabilitar a diferenciação entre maísculas e minúsculas. If you want to find all similar matches, like "judicial" and "judiciary", you'll have to manually search for every type.
+
+If you want to find all similar matches, like "judicial" and "judiciary", you'll have to manually search for every type.
 
 If you've used a database like Lexis or West or Fastcase, you've probably used a wildcard pattern such as `*` to handle this sort of thing. But, regular expressions are *even more powerful* because you can tell your computer to match many different types of patterns you're searching for, not just exact text or certain predefined wildcards. Regular expressions give you much more granular control over your patterns, and you can even use them in [Microsoft Word](http://office.microsoft.com/en-us/word-help/find-and-replace-text-by-using-regular-expressions-advanced-HA102350661.aspx).
 
