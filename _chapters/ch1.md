@@ -10,15 +10,15 @@ Se você já tiver acessado um mecanismo de busca de decisões judiciais como o 
 
 ### Expressões Regulares
 
-Regex may be intuitive for many lawyers, particularly those who were on law review.[^2] That's because citations and regular expressions are closely related. For example, lawyers know what `5 U.S.C. § 552 (2006)` is. We also know that `552 U.S. 5 (2007)` is a different thing entirely. The former is a statute enacted by Congress and codified in the United States Code. The latter is a reported decision of the Supreme Court of the United States published in the bound volumes of the United States Reports. But, let's examine them closely.
+Regex pode ser algo intuitivo para muitos juristas, em especial para aqueles que estiveram envolvidos com Periódicos jurídicos.[^2] Isso porque referências e expressõres regulares possuem características similares. Por exemplo, advogados nos Estados Unidos sabem o que `5 U.S.C. § 552 (2006)` significa. Eles também sabem que `552 U.S. 5 (2007)` é uma referência completamente diferente. A primeira é uma Lei Federal promulgada pelo Congresso e codificada no United States Code (USC). A última é uma decisão catalogada da Suprema Corte dos Estados Unidos, do ano de 2007, publicada no volume 552 do United States Reports, página 5. Mas, vamos examinar essas referências mais de perto.
 
-A minimal citation to the United States Code has four main components: (1) the title of the United States Code; (2) "U.S.C. §"; (3) the specific section; and (4) the applicable date (though this is optional). Thus, we know that 42 U.S.C § 1983 is a valid citation to the United States Code, but U.S.C. § 42-1983 is not. Similarly, a minimal citation to the bound volume of the United States Reports also has four components: (1) the volume of the United States Reports; (2) "U.S."; (3) the starting page for the reported opinion; and (4) the applicable date (this is not optional).
+Uma referência mínima ao United States Code tem quatro componentes principais: (1) O Título do United States Code que se está mencionando; (2) a abreviação "U.S.C. §"; (3) a seção especificada; e (4) a data aplicável (embora isso seja opcional). Assim, sabe-se que 42 U.S.C § 1983 é uma citação correta do United States Code, mas U.S.C. § 42-1983 não é. De maneira similar, uma referência mínima aos volumes do United States Reports também tem quatro componentes: (1) o número do volume do United States Reports; (2) a abreviação "U.S."; (3) a página inicial onde consta a decisão referida; e (4) a data de aplicação (e esse não é opcional).
 
-(DIAGRAM OF U.S.C. CITATION)
+(DIAGRAMA DE REFERÊNCIA DO U.S.C.)
 
-Regex allows us to assemble patterns so that a computer could recognize these patterns. Let's see how.
+O Regex nos permite montar padrões de maneira que um computador possa reconhecer esses padrões. Vamos ver como.
 
-### The building blocks of regex
+### A construção de blocos de regex
 
 We know that as of September 1, 2014, there are 52 titles of the United States Code.[^3] That means we can represent the first component of a citation with *either* a one-digit number (e.g., "8") or a two-digit number ("18"). In regex, we can represent any single digit as `[0-9]`. That means that regex will match any number between 0 and 9. What about *two* digits? Well, we could write `[0-9][0-9]` and that would capture `15` and `25`. Unfortunately, though, would reject `8` because `8` only has one digit.
 
@@ -56,7 +56,7 @@ Now, let's put together the citation:
 
 Congratulations. You have constructed a relatively complex regex! And there's more good news, the road gets easier from here.
 
-### Homework
+### Atividades
 
 1. Practice with a website: A few good examples are [rubular](http://www.rubular.com/),the more feature-filled [regex 101](http://regex101.com/) and the famous [RegExr](http://www.regexr.com/).
 
@@ -66,7 +66,7 @@ Congratulations. You have constructed a relatively complex regex! And there's mo
 
 ***
 
-### Endnotes
+### Notas de Rodapé
 
 [^1]: Many programmers would, I suspect, suggest that this is a strange place to begin. They would argue that it is not really even *coding*. It is my view that this is a proper subject for a beginning chapter. *Cf.* *Brown v. Allen*, 344 U.S. 443, 540 (1953) (Jackson, J., concurring) ("There is no doubt that if there were a super-Supreme Court, a substantial proportion of our reversals of state courts would also be reversed. We are not final because we are infallible, but we are infallible only because we are final."). Plus, by the time you are done with this chapter, you can impress your coding friends that you know basic "regex". A word of caution, the universe of non-coders who will be impressed your knowledge of regex is rather small.
 
