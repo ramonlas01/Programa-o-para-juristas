@@ -1,10 +1,18 @@
 ---
-title: "Chapter 2: Markdown and HTML"
----
+(title: "Chapter 2: Markdown and HTML")
 
-Having survived regex, the next topic is absurdly easy. That topic is "Markdown".
+Capítulo 2: Markdown e HTML
 
-Before diving into Markdown, and at the risk of alienating many readers, I want to remind you of your law-school days. Then (and perhaps even now), when reading a case, you would have a set of highlighters and pens all aimed at allowing you to quickly identify key passages, find the holding, and otherwise annotate important things about a case. Remember that? You would actually *mark* text with a sort of *marker*?
+Superada a questão do regex, o próximo tópico é absurdamente fácil. Esse tópico é o do "Markdown". 
+
+Mas antes de mergulhar nessa questão, e correndo o risco de confundir muitos leitores, eu gostaria que vocês recordassem dos seus dias na faculdade de direito. Naquela época (e talvez ainda hoje em dia), ao ler um caso, você dispunha de uma série de canetas e pincéis marca-texto que permitiam que você rapidamente identificasse passagens importantes,  encontrasse conexões, ou então anotasse coisas importantes sobre o caso. Lembra-se disso? Você de fato *marcaria* um texto com uma espécie de *marcador*?
+
+(Having survived regex, the next topic is absurdly easy. That topic is "Markdown".
+
+Before diving into Markdown, and at the risk of alienating many readers, I want to remind you of your law-school days. Then (and perhaps even now), when reading a case, you would have a set of highlighters and pens all aimed at allowing you to quickly identify key passages, find the holding, and otherwise annotate important things about a case. Remember that? You would actually *mark* text with a sort of *marker*?)
+
+
+Markdown, em última análise, nada mais é do que um jeito de "marcar" textos e descrever certas coisas para um computador, para que este saiba que determinada passagem é imporante para um eventual leitor. É isso. É um jeito simples e poderoso de fazer todo tipo de marcação em textos planos a fim de deixá-los mais práticos. 
 
 Markdown, when it gets right down to it, is just a way to "mark up" text and describe certain things to a computer, so the computer knows what is important to the eventual reader. That's it. It's a simple, powerful way of making all kinds of marks around plain text in order to make the text more usable.
 
